@@ -1,0 +1,10 @@
+<section class="last-posts">
+  <h2>Last Posts</h2>
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

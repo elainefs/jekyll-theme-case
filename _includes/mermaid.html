@@ -1,0 +1,13 @@
+<script src="https://unpkg.com/mermaid@10.7.0/dist/mermaid.min.js"></script>
+<script>
+  (function () {
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "neutral",
+    });
+    window.mermaid.init(
+      undefined,
+      document.querySelectorAll(".language-mermaid")
+    );
+  })();
+</script>

@@ -1,0 +1,17 @@
+<nav class="navbar" aria-label="Navbar">
+  <div class="p-0">
+    <div class="container-fluid d-flex justify-content-start">
+      <button class="navbar-toggler text-light" onclick="toggleMenu()" aria-label="Toggle Navbar">
+        <i class="fa-solid fa-bars fs-2"></i>
+      </button>
+    </div>
+  </div>
+  <div>
+    <a href="{{'/' | absolute_url}}" aria-label="Titulo do Site">
+      <h2 class="">{{site.title}}</h2>
+    </a>
+  </div>
+  <div>
+    <a href="{{'/search' | absolute_url}}" aria-label="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i></a>
+  </div>
+</nav>
