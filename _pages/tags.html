@@ -1,0 +1,22 @@
+---
+title: Tags
+permalink: /tags
+---
+
+<span id="tags">
+  {% for tag in site.tags %}
+  <div>
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <div id="#{{ tag_name | slugify }}"></div>
+    <p></p>
+
+    <h3>{{ tag_name }}</h3>
+    <a name="{{ tag_name | slugify }}"></a>
+    {% for post in site.tags[tag_name] %}
+    <article class="tags-item">
+      <h4><a href="{{ post.url | absolute_url}}">{{post.title}}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</span>

@@ -1,0 +1,30 @@
+---
+title: About
+permalink: /about
+---
+
+<section>
+  <p>
+    A Jekyll theme with sidebar for personal website and blog. 
+  </p>
+</section>
+
+<section>
+  <h2 class="mb-5">Skills</h2>
+  <!-- Fill in the information in _data/skills.yml -->
+  <div class="skills">
+    {% for skills in site.data.skills.skills %}
+    <div class="skills-items">
+      <img style="height: 50px; width: 50px;" src="https://cdn.simpleicons.org/{{skills.skill}}" alt="{{skills.skill}}"
+        title="{{skills.skill}}">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2 class="mb-5">Contacts</h2>
+  <div class="contacts-social-icons">
+    {% include social-icons.html %}
+  </div>
+</section>

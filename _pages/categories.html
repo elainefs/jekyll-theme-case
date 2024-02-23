@@ -1,0 +1,21 @@
+---
+permalink: /categories
+title: Categories
+---
+
+<span id="categories">
+  {% for category in site.categories %}
+  <div>
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugify }}"></div>
+
+    <h3>{{ category_name }}</h3>
+    <a name="{{ category_name | slugify }}"></a>
+    {% for post in site.categories[category_name] %}
+    <div class="categories-item">
+      <h4><a href="{{ post.url | absolute_url}}">{{post.title}}</a></h4>
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</span>

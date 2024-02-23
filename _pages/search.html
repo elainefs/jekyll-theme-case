@@ -1,0 +1,26 @@
+---
+permalink: /search
+---
+
+<div>
+  <!-- Html Elements for Search -->
+  <div id="search-container">
+    <span class="search-input">
+      <input type="text" id="search-input" placeholder="Search... ">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </span>
+    <ul id="results-container"></ul>
+  </div>
+
+  <!-- Script pointing to search-script.js -->
+  <script src="{{'/assets/js/search-script.js' | absolute_url}}" type="text/javascript"></script>
+
+  <!-- Configuration -->
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{'/assets/js/search.json' | absolute_url}}'
+    })
+  </script>
+</div>

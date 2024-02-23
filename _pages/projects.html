@@ -1,0 +1,44 @@
+---
+title: Projetos
+permalink: /projects
+---
+
+<!-- Fill in the information in _data/projects.yml -->
+
+<section class="projects mt-5">
+  {% for projeto in site.data.projects %}
+  <div class="projects-items">
+    <div class="projects-items-img">
+      <img src="{{projeto.image | absolute_url }}" alt="" loading="lazy">
+    </div>
+    <div class="projects-items-info">
+      <div class="projects-items-body">
+        <h3 class="mb-4">{{projeto.name}}</h3>
+
+        <div class="projects-items-stacks">
+          {% for stack_item in projeto.stacks %}
+          <img style="height: 25px; width: 25px;" src="https://cdn.simpleicons.org/{{stack_item.stack}}" />
+          {% endfor%}
+        </div>
+
+        <p>{{projeto.description}}</p>
+      </div>
+
+      <div class="projects-items-footer">
+        <div class="projects-items-links">
+          <a href="{{projeto.repository}}" target="_blank"><i class="fa-solid fa-code"
+              aria-label="Repositório do Projeto"></i></a>
+          <a href="{{projeto.deploy}}" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"
+              aria-label="Ver Projeto"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="projetcs-github-button">
+  <a href="https://github.com/{{site.github}}" target="_blank" aria-label="GitHub">See more projects <i
+      class="fa-brands fa-github"></i>
+  </a>
+</section>
