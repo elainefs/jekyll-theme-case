@@ -1,0 +1,86 @@
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. https://USERNAME.github.io
+
+# Change to your lang - This doesn't translate the theme, it just defines the main language the content is written in.
+lang: pt-BR
+
+timezone: America/Belem # Change to your timezone - https://kevinnovak.github.io/Time-Zone-Picker/
+
+title: Case
+tagline: Web Developer
+description: A Jekyll theme with sidebar for personal website and blog. 
+avatar: "assets/img/avatar/avatar.png" # The avatar on sidebar
+
+# Social profiles
+email: youemail@domain.com
+github: elainefs
+linkedin: elaineferreiras
+instagram:
+mastodon:
+  instance: mastodon.social
+  user: elainefs
+
+# Url for you account: Buy Me A Coffee, Ko-fi, Patreon, etc.
+donate:
+
+# License - eg: Copyright, CC BY-NC-SA 4.0, etc.
+license: MIT License
+licenseUrl: "https://github.com/elainefs/jekyll-theme-case/blob/main/LICENSE"
+
+# Build settings
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options - https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+plugins:
+  - jekyll-toc
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-minifier
+
+toc:
+  min_level: 2
+  max_level: 2
+
+jekyll-minifier:
+  exclude: "atom.xml"
+  uglifier_args:
+    harmony: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      toc: true
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:title
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: "page"
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - LICENSE
+  - rollup.config.js
+  - package*.json
+
+include:
+  - _pages
