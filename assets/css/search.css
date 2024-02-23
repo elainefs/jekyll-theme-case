@@ -1,0 +1,36 @@
+#search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-container #search-input {
+  width: 100%;
+}
+
+#search-container .search-input {
+  border: 1px solid var(--details-color-blue);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#search-container input {
+  padding: 1rem;
+  font-family: inherit;
+  letter-spacing: 1px;
+  border: none;
+}
+
+#search-container input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-result a {
+  color: var(--details-color-blue);
+}

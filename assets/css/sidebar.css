@@ -1,0 +1,138 @@
+/* Sidebar */
+
+#sidebar {
+  background-color: var(--primary-color);
+  width: 350px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  border-right: 1px solid var(--details-color-gray);
+}
+
+.sidebar-header .avatar {
+  outline: 2px solid var(--secondary-color);
+  margin-bottom: 3rem;
+  margin-top: 8rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.sidebar-header .avatar:hover {
+  transform: scale(1.2);
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-header h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sidebar-header h2 a {
+  font-size: 2.5rem;
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+.sidebar-header .tagline {
+  color: var(--text-color-light);
+}
+
+.sidebar-nav {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  font-size: 2.2rem;
+}
+
+.sidebar-nav ul > li {
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  transition: margin-left 0.7s ease;
+  border-radius: 20px;
+}
+
+.sidebar-nav ul > li:hover {
+  margin-left: 1rem;
+}
+
+.sidebar-nav ul > li > a {
+  display: flex;
+  gap: 1.2rem;
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+.sidebar-icons-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sidebar-social-icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-social-icons ul > li,
+.sidebar-blog-resources a i {
+  transition: transform 0.5s ease;
+}
+
+.sidebar-social-icons ul > li:hover,
+.sidebar-blog-resources a i:hover {
+  transform: translateY(-10px);
+}
+
+.sidebar-social-icons ul > li > a,
+.sidebar-blog-resources a i {
+  color: var(--text-color-light);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.sidebar-blog-resources {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-footer {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+.sidebar-footer a {
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+  color: var(--details-color-blue);
+}

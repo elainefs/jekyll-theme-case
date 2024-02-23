@@ -1,0 +1,16 @@
+/* All CSS files should be import here */
+
+@import url(reset.css);
+@import url(variables.css);
+@import url(global.css);
+@import url(sidebar.css);
+@import url(home.css);
+@import url(projects.css);
+@import url(about.css);
+@import url(post.css);
+@import url(search.css);
+@import url(bubbles.css);
+@import url(responsive.css);
+@import url(syntax.css);
+@import url(animations.css);
+@import url(404.css);

@@ -1,0 +1,211 @@
+/* Setting for body post */
+
+.post-title {
+  margin-top: 2rem;
+}
+
+.post-meta {
+  margin: 2rem 0;
+}
+
+.post-meta span {
+  display: flex;
+  gap: 1rem;
+}
+
+.post-banner img,
+.content-post img {
+  border-radius: 0.5rem;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.content-post a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footnotes {
+  font-size: 1.6rem;
+}
+
+.content-post blockquote p {
+  font-size: 2rem;
+  text-align: left;
+  border-left: 0.5rem solid var(--details-color-blue);
+  padding: 2rem;
+  line-height: 4rem;
+}
+
+.content-post blockquote p::before {
+  content: open-quote;
+  font-size: 4rem;
+  color: var(--details-color-blue);
+  font-style: italic;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-right: 1rem;
+}
+
+.content-post blockquote p::after {
+  content: close-quote;
+  font-size: 4rem;
+  color: var(--details-color-blue);
+  font-style: italic;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-left: 1rem;
+}
+
+.content-post .table {
+  display: inline-block;
+  overflow: auto;
+}
+
+.content p.caption-table {
+  font-size: 1.7rem;
+  margin: 0 auto 3rem;
+  padding-left: 1rem;
+  border-left: 0.5rem solid #191622;
+}
+
+.main-content figcaption {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3rem;
+}
+
+.main-content .post-panel,
+.main-content .page-panel {
+  padding-left: 4rem;
+}
+
+.post-panel,
+.page-panel {
+  width: 25%;
+  max-width: 25%;
+}
+
+.post-panel .toc {
+  position: sticky;
+  top: 20px;
+}
+
+.post-panel .toc h2,
+.post-panel .last-posts h2,
+.page-panel .last-posts h2 {
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.post-panel .toc ul,
+.post-panel .last-posts ul,
+.page-panel .last-posts ul {
+  border-left: 0.1rem solid var(--details-color-blue);
+}
+
+.post-panel .toc li,
+.post-panel .last-posts li,
+.page-panel .last-posts li {
+  margin-bottom: 1rem;
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.post-panel .toc a,
+.post-panel .last-posts a,
+.page-panel .last-posts a {
+  color: var(--primary-color);
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.post-panel .toc a:hover,
+.post-panel .last-posts a:hover,
+.page-panel .last-posts a:hover {
+  color: var(--details-color-blue);
+}
+
+.categories-item h4 a,
+.tags-item h4 a,
+.post-categories a,
+.post-tags a {
+  color: var(--details-color-blue);
+  text-decoration: none;
+}
+
+.post-tags a {
+  background-color: var(--details-color-gray);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.post-actions {
+  margin: 5rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.share-post {
+  display: flex;
+}
+
+.share-post ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.share-post ul li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.share-post ul li:hover {
+  color: var(--details-color-blue);
+}
+
+.share-post .fa-brands,
+.share-post .fa-solid {
+  font-size: 2.2rem;
+}
+
+.footer {
+  border-top: 1px solid var(--details-color-blue);
+  width: 100%;
+}
+
+.footer .post-navigation {
+  display: flex;
+  margin: 1rem 0rem;
+  font-size: 1.6rem;
+}
+
+.footer .post-navigation a {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  color: var(--details-color-blue);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.footer .post-navigation a:nth-child(1) {
+  justify-content: start;
+}
+
+.footer .post-navigation a:nth-child(2) {
+  text-align: right;
+  justify-content: end;
+}
+
+.footer .post-navigation a:hover {
+  background-color: var(--details-color-blue);
+  color: var(--text-color-light);
+}
