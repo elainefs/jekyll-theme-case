@@ -1,6 +1,6 @@
 # Site settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://USERNAME.github.io
+baseurl: "/jekyll-theme-case" # the subpath of your site, e.g. /blog
+url: "https://elainefs.github.io" # the base hostname & protocol for your site, e.g. https://USERNAME.github.io
 
 # Change to your lang - This doesn't translate the theme, it just defines the main language the content is written in.
 lang: pt-BR
