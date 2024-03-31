@@ -6,6 +6,7 @@ category: tutorial
 tags:
   - jekyll
   - github
+  - pinned
 ---
 
 ## Prerequisites
