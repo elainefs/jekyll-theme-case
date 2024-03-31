@@ -305,4 +305,21 @@ flowchart LR
   D --> E[End]
 ```
 
+## Pinned Post
+
+It is possible to pin one or more posts to the main page. For this, add the tag "pinned" in the Front Matter of the post. For unpin, remove the tag.
+
+```
+---
+title: How to configure and use this theme
+description: Understand what it takes to start using this theme.
+date: 2024-01-07 19:48:47 -0300
+category: tutorial
+tags:
+  - jekyll
+  - github
+  - pinned
+---
+```
+
 ## References
