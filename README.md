@@ -30,6 +30,7 @@ A Jekyll theme with sidebar for personal website and blog.
 - Feed RSS
 - Sitemap
 - SEO Optimization
+- Pinned post 🆕
 
 ## 📄 License
 
