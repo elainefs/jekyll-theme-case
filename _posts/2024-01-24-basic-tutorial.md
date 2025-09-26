@@ -12,7 +12,7 @@ tags: markdown
 
 The theme is designed for people who want to write using the Markdown markup language.
 
-Below is some information, but you can refer to the [Markdown Guide](https://www.markdownguide.org/) for a deeper understanding.
+Below is some information, but you can refer to the [Markdown Guide](https://www.markdownguide.org/){:target="_blank"} for a deeper understanding.
 
 ## Titles
 
@@ -283,7 +283,7 @@ Replace the `id` value with the id of the video you want to embed.
 
 ## Mermaid Diagrams
 
-It is possible to create diagrams and flowcharts easily and intuitively using the mermaid syntax. You can visit [official website](https://mermaid.js.org/intro/syntax-reference.html) to know the different ways of creating them.
+It is possible to create diagrams and flowcharts easily and intuitively using the mermaid syntax. You can visit [official website](https://mermaid.js.org/intro/syntax-reference.html){:target="_blank"} to know the different ways of creating them.
 
 ````
 ```mermaid

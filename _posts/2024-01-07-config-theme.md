@@ -11,7 +11,7 @@ tags:
 
 ## Prerequisites
 
-This is a theme built using the Jekyll static site generator, which is developed using Ruby, so you will need to have Ruby and some other dependencies installed. Visit the [official Jekyll website](https://jekyllrb.com/docs/installation/) and install the necessary dependencies.
+This is a theme built using the Jekyll static site generator, which is developed using Ruby, so you will need to have Ruby and some other dependencies installed. Visit the [official Jekyll website](https://jekyllrb.com/docs/installation/){:target="_blank"} and install the necessary dependencies.
 
 ## Theme installation
 
@@ -23,7 +23,7 @@ There are three ways to obtain this theme:
 
 ### 1. Using the template repository available on GitHub
 
-Log in to your GitHub account, go to this [theme's repository](https://github.com/elainefs/jekyll-theme-case) and click `Use this template`. A new page will open to create a new repository. Set the name of this repository to `USERNAME.github.io`, where `USERNAME` is your GitHub username.
+Log in to your GitHub account, go to this [theme's repository](https://github.com/elainefs/jekyll-theme-case){:target="_blank"} and click `Use this template`. A new page will open to create a new repository. Set the name of this repository to `USERNAME.github.io`, where `USERNAME` is your GitHub username.
 
 After saving the new repository, GitHub will automatically try to publish the site and you will receive a build error. This happens because by default GitHub will try to publish the site using the standard _pages-build-deployment_ workflow with a branch as the source.
 
@@ -45,7 +45,7 @@ You may continue to see an `Initial commit` with a red X as if there was still a
 
 ### 2. Uploading files to a new repository
 
-Log in to your GitHub account, go to this [theme's repository](https://github.com/elainefs/jekyll-theme-case), click `Releases` in the sidebar, and download the files for this theme in the last version to have the theme with the most up-to-date features possible. Create a new empty repository with the name `USERNAME.github.io`, just select the "Public" option.
+Log in to your GitHub account, go to this [theme's repository](https://github.com/elainefs/jekyll-theme-case){:target="_blank"}, click `Releases` in the sidebar, and download the files for this theme in the last version to have the theme with the most up-to-date features possible. Create a new empty repository with the name `USERNAME.github.io`, just select the "Public" option.
 
 There are several ways to upload theme files to your new repository, the simplest is:
 
@@ -69,7 +69,7 @@ Jekyll using Docker image and GitHub Pages Jekyll should not be used, use workfl
 
 ### 3. Creating a fork of the repository
 
-Log in to your GitHub account, go to this [theme's repository](https://github.com/elainefs/jekyll-theme-case) and click `Fork`. A new page will open to create a new fork. Set the name of this repository to `USERNAME.github.io`. Check the option "Copy the `gh-pages` branch only" and click Create fork.
+Log in to your GitHub account, go to this [theme's repository](https://github.com/elainefs/jekyll-theme-case){:target="_blank"} and click `Fork`. A new page will open to create a new fork. Set the name of this repository to `USERNAME.github.io`. Check the option "Copy the `gh-pages` branch only" and click Create fork.
 
 1. After that, in the top bar, click on Settings
 2. In General, just below Repository Name, uncheck the Template repository option
@@ -122,7 +122,7 @@ Whenever changes to the `_config.yml` file are made, the server needs to be rest
 
 To change the theme's favicon, add the favicon files inside the `assets/img/favicon` folder.
 
-The favicons for this theme were created through the website [Favicon Generator](https://www.favicon-generator.org/).
+The favicons for this theme were created through the website [Favicon Generator](https://www.favicon-generator.org/){:target="_blank"}.
 
 ### Translating Template
 
