@@ -27,6 +27,6 @@
   stacks:
     - stack: jekyll
     - stack: html5
-    - stack: css3
+    - stack: css
     - stack: javascript
     - stack: bootstrap
