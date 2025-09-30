@@ -9,8 +9,15 @@ timezone: America/Belem # Change to your timezone - https://kevinnovak.github.io
 
 title: Case
 tagline: Web Developer
-description: A Jekyll theme with sidebar for personal website and blog. 
+description: A Jekyll theme with sidebar for personal website and blog. # Used for SEO
 avatar: "assets/img/avatar/avatar.png" # The avatar on sidebar
+
+# About page
+about: "A Jekyll theme with sidebar for personal website and blog."
+skills: true
+experiences: true
+education: true
+contacts: true
 
 # Social profiles
 email: youemail@domain.com

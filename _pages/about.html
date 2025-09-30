@@ -4,11 +4,10 @@ permalink: /about
 ---
 
 <section>
-  <p>
-    A Jekyll theme with sidebar for personal website and blog. 
-  </p>
+  <p>{{ site.about }}</p>
 </section>
 
+{% if site.skills %}
 <section>
   <h2 class="mb-5">Skills</h2>
   <!-- Fill in the information in _data/skills.yml -->
@@ -21,10 +20,59 @@ permalink: /about
     {% endfor %}
   </div>
 </section>
+{% endif %}
 
+{% if site.experiences %}
+<section>
+  <h2 class="mb-5">Experience</h2>
+  <!-- Fill in the information in _data/experience.yml -->
+  <div class="experiences">    
+      {% for experience in site.data.experience %}
+        <div class="experience-item">          
+            <p class="experience-role">
+              <i class="fa-solid fa-briefcase"></i>
+              {{ experience.role }}
+            </p>
+            <p class="experience-company">
+              {{ experience.company }}
+            </p>
+            <p class="experience-period">
+              {{ experience.start|date: "%Y . %m" }} - {% if experience.end == "Now" %} present {% else %} {{ experience.end|date: "%Y . %m" }} {% endif %}
+            </p>
+            <p class="experience-description">
+              {{ experience.description }}
+            </p>
+        </div>
+      {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if site.education %}
+<section>
+  <h2 class="mb-5">Education</h2>
+  <!-- Fill in the information in _data/education.yml -->
+  <div class="education">
+    {% for education in site.data.education %}
+      <div class="education-item">
+        <p class="education-institution">
+          <i class="fa-solid fa-user-graduate"></i> 
+          {{ education.institution }}</p>
+        <p class="education-degree">           
+          {{ education.degree }}, {{ education.field }}
+        </p>
+        <p>{{ education.start|date: "%Y . %m" }} - {{ education.end|date: "%Y . %m" }}</p>    
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if site.contacts %}
 <section>
   <h2 class="mb-5">Contacts</h2>
   <div class="contacts-social-icons">
     {% include social-icons.html %}
   </div>
 </section>
+{% endif %}

@@ -1,0 +1,12 @@
+## Professional Experience Card Template
+# Use the template below to create a new professional experience card 
+# For each new professional experience, copy the template and fill in the information
+# If it is your current job, use "Now" in the "end" field
+# ------------------------------------------------------
+#Template
+- role: "Web Developer"
+  company: "Company Name"
+  start: "2024-09-01"
+  end: "Now" 
+  description: "During my time at the company, I developed many Websites."
+# -------------------------------------------------------

@@ -1,0 +1,11 @@
+## Education Card Template
+# Use the template below to create a new education card
+# For each new education, copy the template and fill in the information
+# ---------------------------------------------------------
+# Template
+- institution: "University of Technology"
+  degree: "Bachelor Degree"
+  field: "Software Engineering"
+  start: "2023-09-11"
+  end: "2027-07-07"
+# ---------------------------------------------------------

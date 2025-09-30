@@ -35,3 +35,20 @@
 .contacts-social-icons ul li a i[class="fa-solid fa-handshake"] {
   display: none;
 }
+
+.experience-item,
+.education-item {
+  margin: 0 1rem 2rem 0;
+  padding-left: 2.5rem;
+}
+
+.experience-item p,
+.education-item p {
+  margin: 0 !important;
+}
+
+.experience-role,
+.education-institution {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
