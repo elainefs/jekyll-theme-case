@@ -44,7 +44,7 @@ function toShare(event) {
       window.open(share, "_blank");
       break;
     case social.classList.contains("mastodon"):
-      share = "https://mastodon.com.br/share?url=" + urlPost;
+      share = "https://mastodon.social/share?url=" + urlPost;
       window.open(share, "_blank");
       break;
     case social.classList.contains("telegram"):
@@ -55,16 +55,12 @@ function toShare(event) {
       share = "https://www.reddit.com/submit?url=" + urlPost;
       window.open(share, "_blank");
       break;
-    case social.classList.contains("pocket"):
-      share = "https://getpocket.com/save?url=" + urlPost;
-      window.open(share, "_blank");
-      break;
     default:
       share = urlPost;
       let copyUrl = document.querySelector(".fa-share-nodes");
       copyUrl.addEventListener("click", () => {
-        navigator.clipboard.writeText(share);
         copyUrl.setAttribute("title", "Copiado!");
+        navigator.clipboard.writeText(share);
       });
       break;
   }
