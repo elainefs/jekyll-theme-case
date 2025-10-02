@@ -20,6 +20,10 @@
   object-position: 50% 50%;
 }
 
+.content-post img {
+  max-width: 70%;
+}
+
 .content-post a {
   color: var(--secondary-color);
   text-decoration: none;
