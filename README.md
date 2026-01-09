@@ -30,7 +30,8 @@ A Jekyll theme with sidebar for personal website and blog.
 - Feed RSS
 - Sitemap
 - SEO Optimization
-- Pinned post 🆕
+- Pinned post
+- Support for Skillicons and Simpleicons 🆕
 
 ## 📄 License
 
