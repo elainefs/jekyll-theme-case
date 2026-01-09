@@ -19,6 +19,10 @@ experiences: true
 education: true
 contacts: true
 
+# Icon Package: only one type of icon is activated at time and will be applied to the entire theme
+# Options: skillicons, simpleicons
+icon_pack: skillicons
+
 # Social profiles
 email: youemail@domain.com
 github: elainefs

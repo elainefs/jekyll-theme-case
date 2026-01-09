@@ -1,9 +1,10 @@
-# In 'skill' use the "Brand slug" available at:
-# https://github.com/simple-icons/simple-icons/blob/master/slugs.md
+# There are two icon packages available, SimpleIcons or Skill Icons (default)
+# In 'skill' use the "Brand slug" or "Icon ID' available at:
+# SimpleIcons: https://github.com/simple-icons/simple-icons/blob/master/slugs.md
+# Skill Icons: https://github.com/tandpfun/skill-icons/tree/main?tab=readme-ov-file#icons-list
 
 skills:
-  - skill: jekyll
-  - skill: html5
+  - skill: html
   - skill: css
   - skill: javascript
   - skill: bootstrap

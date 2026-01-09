@@ -14,8 +14,13 @@ permalink: /about
   <div class="skills">
     {% for skills in site.data.skills.skills %}
     <div class="skills-items">
-      <img style="height: 50px; width: 50px;" src="https://cdn.simpleicons.org/{{skills.skill}}" alt="{{skills.skill}}"
+      {% if site.icon_pack == 'simpleicons' %}
+        <img style="height: 50px; width: 50px;" src="https://cdn.simpleicons.org/{{skills.skill}}" alt="{{skills.skill}}"
         title="{{skills.skill}}">
+      {% else %}
+        <img style="height: 50px; width: 50px;" src="https://skillicons.dev/icons?i={{skills.skill}}" alt="{{skills.skill}}"
+        title="{{skills.skill}}">
+      {% endif %}
     </div>
     {% endfor %}
   </div>
